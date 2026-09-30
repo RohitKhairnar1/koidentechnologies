@@ -148,7 +148,7 @@ export const products: Product[] = [
     category: "battery-cells",
     productType: "Cylindrical cell (Li-ion)",
     application: "E-mobility",
-    image: "/images/Norda 18650.jpg",
+    image: "/images/Norda-18650.jpg",
     art: "cell-18650",
     tagline: "High-rate 18650 Li-ion cell with low internal resistance.",
     keySpecs: ["2650mAh+", "IR 11–13 mΩ", "200 cells/box"],

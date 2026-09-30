@@ -90,7 +90,7 @@ const industries = [
     href: "/products",
     cta: "Explore energy storage",
     art: "cell-lfp" as const,
-    image: "/images/energy-storage.png",
+    image: "/images/Energy-storage.png",
   },
   {
     title: "Industrial & Commercial",
