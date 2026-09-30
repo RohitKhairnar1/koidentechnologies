@@ -1,0 +1,33 @@
+{
+  "name": "koiden-technologies",
+  "version": "0.1.0",
+  "private": true,
+  "description": "B2B industrial supply website for Koiden Technologies",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "15.5.24",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "resend": "^6.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "10.4.19",
+    "eslint": "8.57.0",
+    "eslint-config-next": "15.5.24",
+    "postcss": "8.5.26",
+    "tailwindcss": "3.4.6",
+    "typescript": "5.5.3"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
