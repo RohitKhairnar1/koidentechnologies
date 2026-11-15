@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header";
@@ -27,8 +28,6 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_IN",
     type: "website",
-    // TODO: add a branded 1200×630 PNG at /public/og.png and reference it here:
-    // images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
@@ -74,6 +73,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-SGZKSMNS6S"
+          strategy="beforeInteractive"
+        />
+        <Script id="google-analytics" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SGZKSMNS6S');
+          `}
+        </Script>
+      </head>
+
       <body className="flex min-h-screen flex-col">
         <a
           href="#main"
@@ -81,12 +96,16 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+
         <JsonLd data={organizationLd} />
         <JsonLd data={websiteLd} />
+
         <Header />
+
         <main id="main" className="flex-1">
           {children}
         </main>
+
         <Footer />
       </body>
     </html>
