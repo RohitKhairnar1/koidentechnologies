@@ -10,7 +10,7 @@ export const site = {
   shortName: "Koiden",
   // Canonical site URL. Override at build time with NEXT_PUBLIC_SITE_URL.
   // TODO: replace the fallback with the real production domain before launch.
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://koiden.example",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://koiden.in",
   tagline: "Industrial supply for battery pack manufacturing",
   description:
     "Koiden Technologies supplies battery cells, BMS boards, nickel strips, and pack-assembly materials to manufacturers and integrators across India.",
