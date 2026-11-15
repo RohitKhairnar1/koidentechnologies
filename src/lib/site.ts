@@ -18,10 +18,10 @@ export const site = {
   email: "koidentechnologies@gmail.com",
   phone: "+91 74987 96715",
   address: {
-    line1: "Gat No. 90/4, Golegaon Road, Markal, Taluka-Khed",
+    line1: "Gat No 90/4, Golegaon Road, Pimpalgaon Tarfe Chakan",
     city: "Pune",
     state: "Maharashtra",
-    postalCode: "412105",
+    postalCode: "410501",
     country: "India",
   },
   // TODO: add GSTIN / CIN once confirmed. Displayed in the footer.
